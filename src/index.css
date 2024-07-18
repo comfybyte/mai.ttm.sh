@@ -1,0 +1,53 @@
+.container {
+  padding: 0 .5rem;
+}
+
+header {
+  padding: 0 .5rem;
+  font-size: 2.5em;
+  font-style: italic;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+
+.content strong {
+  color: var(--faded);
+}
+
+.content ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: "> ";
+  gap: 10px;
+}
+
+.content li::after {
+  content: " <";
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: end;
+  gap: .25rem;
+  line-height: 0;
+}
+
+footer .footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-left: 1rem;
+}
+
+footer p:hover {
+  cursor: default;
+}

@@ -1,0 +1,36 @@
+* {
+  --bg: #000;
+  --text: #fcd1d7;
+  --highlight: #e9b1cd;
+  --faded: #c3829e;
+  --dark: #562135;
+  --contrasting: #3e8fb0;
+}
+
+::selection {
+  color: var(--text);
+  background-color: var(--faded);
+}
+
+a {
+  color: var(--highlight);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--faded);
+}
+
+a:hover {
+  color: var(--contrasting);
+  transition: color .25s;
+}
+
+body {
+  all: unset;
+
+  font-family: "EffectsEighty";
+  font-size: 1.5rem;
+  background-color: var(--bg);
+  color: var(--text);
+}
